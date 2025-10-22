@@ -70,7 +70,7 @@ namespace EVRenter_Service.Service
 
             if (createdStation == null)
             {
-                throw new Exception("Failed to retrieve created user.");
+                throw new Exception("Failed to retrieve created station.");
             }
 
             return createdStation;

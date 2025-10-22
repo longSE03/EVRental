@@ -76,7 +76,7 @@ namespace EVRenter_API.Controllers
             var result = await _stationService.DeleteStationAsync(id);
             if (!result)
             {
-                return NotFound("User not found.");
+                return NotFound("Station not found.");
             }
 
             return NoContent();

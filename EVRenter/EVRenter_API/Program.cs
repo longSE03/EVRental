@@ -24,6 +24,12 @@ builder.Services.AddAutoMapper(typeof(UserMapping));
 builder.Services.AddScoped<IStationService, StationService>();
 builder.Services.AddAutoMapper(typeof(StationMapping));
 
+builder.Services.AddScoped<IModelService, ModelService>();
+builder.Services.AddAutoMapper(typeof(ModelMapping));
+
+builder.Services.AddScoped<IVehicleService, VehicleService>();
+builder.Services.AddAutoMapper(typeof(VehicleMapping));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -490,9 +490,6 @@ namespace EVRenter_Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("RentalPriceId")
-                        .HasColumnType("int");
-
                     b.Property<int>("StationID")
                         .HasColumnType("int");
 
@@ -502,8 +499,6 @@ namespace EVRenter_Data.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ModelID");
-
-                    b.HasIndex("RentalPriceId");
 
                     b.HasIndex("StationID");
 
@@ -670,12 +665,6 @@ namespace EVRenter_Data.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("EVRenter_Data.Entities.RentalPrice", "RentalPrice")
-                        .WithMany()
-                        .HasForeignKey("RentalPriceId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("EVRenter_Data.Entities.Station", "Station")
                         .WithMany("Vehicles")
                         .HasForeignKey("StationID")
@@ -683,8 +672,6 @@ namespace EVRenter_Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Model");
-
-                    b.Navigation("RentalPrice");
 
                     b.Navigation("Station");
                 });

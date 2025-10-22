@@ -17,6 +17,7 @@ namespace EVRenter_Service.Mapping
             CreateMap<User, UserResponseModel>();
 
             CreateMap<UserCreateRequest, User>();
+            CreateMap<UserUpdateRequest, User>();
         }
     }
 }

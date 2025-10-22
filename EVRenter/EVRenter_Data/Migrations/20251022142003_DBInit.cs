@@ -6,11 +6,26 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace EVRenter_Data.Migrations
 {
     /// <inheritdoc />
-    public partial class DbInit : Migration
+    public partial class DBInit : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Images",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ContentType = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Base64Image = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Images", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Models",
                 columns: table => new
@@ -69,6 +84,30 @@ namespace EVRenter_Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "ModelImages",
+                columns: table => new
+                {
+                    ModelID = table.Column<int>(type: "int", nullable: false),
+                    ImageID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ModelImages", x => new { x.ModelID, x.ImageID });
+                    table.ForeignKey(
+                        name: "FK_ModelImages_Images_ImageID",
+                        column: x => x.ImageID,
+                        principalTable: "Images",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ModelImages_Models_ModelID",
+                        column: x => x.ModelID,
+                        principalTable: "Models",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "RentalPrices",
                 columns: table => new
                 {
@@ -88,6 +127,35 @@ namespace EVRenter_Data.Migrations
                         principalTable: "Models",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Vehicles",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    PlateNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ModelID = table.Column<int>(type: "int", nullable: false),
+                    StationID = table.Column<int>(type: "int", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false),
+                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Vehicles", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Vehicles_Models_ModelID",
+                        column: x => x.ModelID,
+                        principalTable: "Models",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Vehicles_Stations_StationID",
+                        column: x => x.StationID,
+                        principalTable: "Stations",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -127,37 +195,30 @@ namespace EVRenter_Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Vehicles",
+                name: "Feedbacks",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    PlateNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserID = table.Column<int>(type: "int", nullable: false),
                     ModelID = table.Column<int>(type: "int", nullable: false),
-                    StationID = table.Column<int>(type: "int", nullable: false),
-                    Status = table.Column<int>(type: "int", nullable: false),
-                    RentalPriceId = table.Column<int>(type: "int", nullable: false),
+                    Comment = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     IsDelete = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Vehicles", x => x.Id);
+                    table.PrimaryKey("PK_Feedbacks", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Vehicles_Models_ModelID",
+                        name: "FK_Feedbacks_Models_ModelID",
                         column: x => x.ModelID,
                         principalTable: "Models",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Vehicles_RentalPrices_RentalPriceId",
-                        column: x => x.RentalPriceId,
-                        principalTable: "RentalPrices",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Vehicles_Stations_StationID",
-                        column: x => x.StationID,
-                        principalTable: "Stations",
+                        name: "FK_Feedbacks_Users_UserID",
+                        column: x => x.UserID,
+                        principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -188,38 +249,6 @@ namespace EVRenter_Data.Migrations
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_ExtraFee_Users_UserID",
-                        column: x => x.UserID,
-                        principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Payment",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    BookingID = table.Column<int>(type: "int", nullable: false),
-                    UserID = table.Column<int>(type: "int", nullable: false),
-                    PaymentType = table.Column<int>(type: "int", nullable: false),
-                    PaymentMethod = table.Column<int>(type: "int", nullable: false),
-                    PaymentTime = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Amount = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
-                    Status = table.Column<int>(type: "int", nullable: false),
-                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Payment", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Payment_Bookings_BookingID",
-                        column: x => x.BookingID,
-                        principalTable: "Bookings",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Payment_Users_UserID",
                         column: x => x.UserID,
                         principalTable: "Users",
                         principalColumn: "Id",
@@ -276,6 +305,38 @@ namespace EVRenter_Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Payment",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    BookingID = table.Column<int>(type: "int", nullable: false),
+                    UserID = table.Column<int>(type: "int", nullable: false),
+                    PaymentType = table.Column<int>(type: "int", nullable: false),
+                    PaymentMethod = table.Column<int>(type: "int", nullable: false),
+                    PaymentTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Amount = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false),
+                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Payment", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Payment_Bookings_BookingID",
+                        column: x => x.BookingID,
+                        principalTable: "Bookings",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Payment_Users_UserID",
+                        column: x => x.UserID,
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "FeeType",
                 columns: table => new
                 {
@@ -319,6 +380,16 @@ namespace EVRenter_Data.Migrations
                 column: "UserID");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Feedbacks_ModelID",
+                table: "Feedbacks",
+                column: "ModelID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Feedbacks_UserID",
+                table: "Feedbacks",
+                column: "UserID");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_FeeType_ExtraFeeID",
                 table: "FeeType",
                 column: "ExtraFeeID");
@@ -344,6 +415,11 @@ namespace EVRenter_Data.Migrations
                 column: "VehicleID");
 
             migrationBuilder.CreateIndex(
+                name: "IX_ModelImages_ImageID",
+                table: "ModelImages",
+                column: "ImageID");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Payment_BookingID",
                 table: "Payment",
                 column: "BookingID");
@@ -365,11 +441,6 @@ namespace EVRenter_Data.Migrations
                 column: "ModelID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Vehicles_RentalPriceId",
-                table: "Vehicles",
-                column: "RentalPriceId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Vehicles_StationID",
                 table: "Vehicles",
                 column: "StationID");
@@ -379,13 +450,22 @@ namespace EVRenter_Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "Feedbacks");
+
+            migrationBuilder.DropTable(
                 name: "FeeType");
 
             migrationBuilder.DropTable(
                 name: "HandoverAndReturn");
 
             migrationBuilder.DropTable(
+                name: "ModelImages");
+
+            migrationBuilder.DropTable(
                 name: "Payment");
+
+            migrationBuilder.DropTable(
+                name: "RentalPrices");
 
             migrationBuilder.DropTable(
                 name: "ExtraFee");
@@ -394,19 +474,19 @@ namespace EVRenter_Data.Migrations
                 name: "Vehicles");
 
             migrationBuilder.DropTable(
-                name: "Bookings");
+                name: "Images");
 
             migrationBuilder.DropTable(
-                name: "RentalPrices");
+                name: "Bookings");
 
             migrationBuilder.DropTable(
                 name: "Stations");
 
             migrationBuilder.DropTable(
-                name: "Users");
+                name: "Models");
 
             migrationBuilder.DropTable(
-                name: "Models");
+                name: "Users");
         }
     }
 }

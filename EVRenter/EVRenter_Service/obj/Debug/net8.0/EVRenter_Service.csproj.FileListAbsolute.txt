@@ -18,6 +18,12 @@ D:\FPT\9th_2\SWP391\BE\EVRenter_BE\EVRenter\EVRenter_Service\obj\Debug\net8.0\EV
 D:\FPT\9th_2\SWP391\BE\EVRenter_BE\EVRenter\EVRenter_Service\obj\Debug\net8.0\refint\EVRenter_Service.dll
 D:\FPT\9th_2\SWP391\BE\EVRenter_BE\EVRenter\EVRenter_Service\obj\Debug\net8.0\EVRenter_Service.pdb
 D:\FPT\9th_2\SWP391\BE\EVRenter_BE\EVRenter\EVRenter_Service\obj\Debug\net8.0\ref\EVRenter_Service.dll
+D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\obj\Debug\net8.0\EVRenter_Service.csproj.AssemblyReference.cache
+D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\obj\Debug\net8.0\EVRenter_Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\obj\Debug\net8.0\EVRenter_Service.AssemblyInfoInputs.cache
+D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\obj\Debug\net8.0\EVRenter_Service.AssemblyInfo.cs
+D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\obj\Debug\net8.0\EVRenter_Service.csproj.CoreCompileInputs.cache
+D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\obj\Debug\net8.0\EVRenter_Service.sourcelink.json
 D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\bin\Debug\net8.0\EVRenter_Service.deps.json
 D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\bin\Debug\net8.0\EVRenter_Service.dll
 D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\bin\Debug\net8.0\EVRenter_Service.pdb
@@ -27,12 +33,6 @@ D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\bin\Debug\net8.0\E
 D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\bin\Debug\net8.0\EVRenter_Repository.pdb
 D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\bin\Debug\net8.0\EVRenter_CM.pdb
 D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\bin\Debug\net8.0\EVRenter_Data.pdb
-D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\obj\Debug\net8.0\EVRenter_Service.csproj.AssemblyReference.cache
-D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\obj\Debug\net8.0\EVRenter_Service.GeneratedMSBuildEditorConfig.editorconfig
-D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\obj\Debug\net8.0\EVRenter_Service.AssemblyInfoInputs.cache
-D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\obj\Debug\net8.0\EVRenter_Service.AssemblyInfo.cs
-D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\obj\Debug\net8.0\EVRenter_Service.csproj.CoreCompileInputs.cache
-D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\obj\Debug\net8.0\EVRenter_Service.sourcelink.json
 D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\obj\Debug\net8.0\EVRenter.B618ABB9.Up2Date
 D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\obj\Debug\net8.0\EVRenter_Service.dll
 D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_Service\obj\Debug\net8.0\refint\EVRenter_Service.dll

@@ -5,6 +5,224 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Model": {
+      "get": {
+        "tags": [
+          "Model"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Model"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ModelName": {
+                    "type": "string"
+                  },
+                  "Seat": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Range": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "TrunkCapatity": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Hoursepower": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "MoveLimit": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "ModelName": {
+                  "style": "form"
+                },
+                "Seat": {
+                  "style": "form"
+                },
+                "Range": {
+                  "style": "form"
+                },
+                "TrunkCapatity": {
+                  "style": "form"
+                },
+                "Hoursepower": {
+                  "style": "form"
+                },
+                "MoveLimit": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Model/{id}": {
+      "get": {
+        "tags": [
+          "Model"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Model"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ModelName": {
+                    "type": "string"
+                  },
+                  "Seat": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Range": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "TrunkCapatity": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Hoursepower": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "MoveLimit": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "ModelName": {
+                  "style": "form"
+                },
+                "Seat": {
+                  "style": "form"
+                },
+                "Range": {
+                  "style": "form"
+                },
+                "TrunkCapatity": {
+                  "style": "form"
+                },
+                "Hoursepower": {
+                  "style": "form"
+                },
+                "MoveLimit": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Model"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Model/{stationId}": {
+      "get": {
+        "tags": [
+          "Model"
+        ],
+        "parameters": [
+          {
+            "name": "stationId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Station": {
       "get": {
         "tags": [
@@ -343,6 +561,166 @@
       "delete": {
         "tags": [
           "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vehicle": {
+      "get": {
+        "tags": [
+          "Vehicle"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Vehicle"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "PlateNumber": {
+                    "type": "string"
+                  },
+                  "ModelID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "StationID": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "PlateNumber": {
+                  "style": "form"
+                },
+                "ModelID": {
+                  "style": "form"
+                },
+                "StationID": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vehicle/{id}": {
+      "get": {
+        "tags": [
+          "Vehicle"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Vehicle"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "PlateNumber": {
+                    "type": "string"
+                  },
+                  "ModelID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "StationID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Status": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "PlateNumber": {
+                  "style": "form"
+                },
+                "ModelID": {
+                  "style": "form"
+                },
+                "StationID": {
+                  "style": "form"
+                },
+                "Status": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Vehicle"
         ],
         "parameters": [
           {

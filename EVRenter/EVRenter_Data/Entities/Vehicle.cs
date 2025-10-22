@@ -14,7 +14,6 @@ namespace EVRenter_Data.Entities
         public int Status { get; set; }
         public virtual Station Station { get; set; }
         public virtual Model Model { get; set; }
-        public virtual RentalPrice RentalPrice { get; set; }
         public virtual ICollection<HandoverAndReturn> HandoverAndReturns { get; set; }
     }
 }

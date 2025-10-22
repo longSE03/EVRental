@@ -16,6 +16,7 @@ namespace EVRenter_Service.Mapping
         {
             CreateMap<Station, StationResponseModel>();
             CreateMap<StationRequestModel, Station>();
+            CreateMap<StationUpdateRequest, Station>();
         }
     }
 }
