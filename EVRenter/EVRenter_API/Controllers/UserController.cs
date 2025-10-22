@@ -77,7 +77,7 @@ namespace EVRenter_API.Controllers
 
         // Cập nhật người dùng
         [HttpPut("{id}")]
-        [Authorize]
+        //[Authorize]
         public async Task<IActionResult> UpdateUser(int id, [FromForm] UserUpdateRequest request)
         {
             if (!ModelState.IsValid)
@@ -96,7 +96,6 @@ namespace EVRenter_API.Controllers
 
         // Xóa người dùng
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Manager")]
         public async Task<IActionResult> DeleteUser(int id)
         {
             var result = await _userService.DeleteUserAsync(id);

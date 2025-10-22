@@ -21,6 +21,9 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddAutoMapper(typeof(UserMapping));
 
+builder.Services.AddScoped<IStationService, StationService>();
+builder.Services.AddAutoMapper(typeof(StationMapping));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

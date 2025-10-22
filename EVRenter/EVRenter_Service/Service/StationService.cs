@@ -15,9 +15,13 @@ namespace EVRenter_Service.Service
 {
     public interface IStationService
     {
-
+        Task<IEnumerable<StationResponseModel>> GetAllStation();
+        Task<StationResponseModel?> GetStationByIdAsync(int id);
+        Task<StationResponseModel> CreateStationAsync(StationRequestModel request);
+        Task<StationResponseModel?> UpdateStationAsync(int id, StationUpdateRequest request);
+        Task<bool> DeleteStationAsync(int id);
     }
-    public class StationService
+    public class StationService : IStationService
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
@@ -37,7 +41,7 @@ namespace EVRenter_Service.Service
                 .ToListAsync();
         }
 
-        public async Task<StationResponseModel?> GetUserByIdAsync(int id)
+        public async Task<StationResponseModel?> GetStationByIdAsync(int id)
         {
             // Get the user with basic information
             var station = await _unitOfWork.Repository<Station>().AsQueryable()
@@ -72,7 +76,7 @@ namespace EVRenter_Service.Service
             return createdStation;
         }
 
-        public async Task<StationResponseModel?> UpdateStationAsync(int id, StationRequestModel request)
+        public async Task<StationResponseModel?> UpdateStationAsync(int id, StationUpdateRequest request)
         {
             var existingStation = await _unitOfWork.Repository<Station>()
                 .AsQueryable()
@@ -108,6 +112,17 @@ namespace EVRenter_Service.Service
             }
 
             return _mapper.Map<StationResponseModel>(existingStation);
+        }
+
+        public async Task<bool> DeleteStationAsync(int id)
+        {
+            var user = await _unitOfWork.Repository<Station>().GetById(id);
+            if (user == null) return false;
+
+            user.IsDelete = true;
+            await _unitOfWork.SaveChangesAsync();
+
+            return true;
         }
     }
 }
