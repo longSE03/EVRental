@@ -14,7 +14,9 @@ namespace EVRenter_Service.Mapping
     {
         public ModelMapping()
         {
-            CreateMap<Model, ModelResponseModel>();
+            CreateMap<Model, ModelResponseModel>()
+                .ForMember(dest => dest.Vehicles, opt => opt.MapFrom(src => src.Vehicles.Where(v => !v.IsDelete)))
+                .ForMember(dest => dest.RentalPrice, opt => opt.MapFrom(src => src.RentalPrice));
             CreateMap<ModelRequestModel, Model>();
             CreateMap<ModelUpdateRequest, Model>();
         }

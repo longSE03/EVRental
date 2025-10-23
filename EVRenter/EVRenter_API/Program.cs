@@ -33,6 +33,9 @@ builder.Services.AddAutoMapper(typeof(VehicleMapping));
 builder.Services.AddScoped<IRentalPriceService, RentalPriceService>();
 builder.Services.AddAutoMapper(typeof(PriceMapping));
 
+builder.Services.AddScoped<IBookingService, BookingService>();
+builder.Services.AddAutoMapper(typeof(BookingMapping));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

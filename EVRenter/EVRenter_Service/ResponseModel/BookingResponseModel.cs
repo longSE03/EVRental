@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EVRenter_Data.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,9 @@ namespace EVRenter_Service.ResponseModel
 {
     public class BookingResponseModel
     {
+        public int Id { get; set; }
         public int ModelID { get; set; }
+        public virtual Model Model { get; set; }
         public int RenterID { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
