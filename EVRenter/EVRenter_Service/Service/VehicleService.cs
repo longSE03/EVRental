@@ -169,10 +169,10 @@ namespace EVRenter_Service.Service
 
         public async Task<bool> DeleteVehicleAsync(int id)
         {
-            var user = await _unitOfWork.Repository<Vehicle>().GetById(id);
-            if (user == null) return false;
+            var vehicle = await _unitOfWork.Repository<Vehicle>().GetById(id);
+            if (vehicle == null) return false;
 
-            user.IsDelete = true;
+            vehicle.IsDelete = true;
             await _unitOfWork.SaveChangesAsync();
 
             return true;
