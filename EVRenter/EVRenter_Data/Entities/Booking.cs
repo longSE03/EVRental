@@ -29,5 +29,6 @@ namespace EVRenter_Data.Entities
         public virtual ICollection<HandoverAndReturn> HandoverAndReturns { get; set; }
         public virtual ICollection<Payment> Payments { get; set; }
         public virtual ICollection<ExtraFee> ExtraFees { get; set; }
+        public virtual Voucher Voucher { get; set; }
     }
 }

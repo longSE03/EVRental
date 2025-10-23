@@ -25,6 +25,7 @@ namespace EVRenter_Data
         public DbSet<Feedback> Feedbacks { get; set; }
         public DbSet<Image> Images { get; set; }
         public DbSet<ModelImage> ModelImages { get; set; }
+        public DbSet<Voucher> Vouchers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -58,6 +59,11 @@ namespace EVRenter_Data
                 .HasOne(b => b.User)
                 .WithMany(m => m.Bookings)
                 .HasForeignKey(b => b.RenterID)
+                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Booking>()
+                .HasOne(b => b.Voucher)
+                .WithMany(m => m.Bookings)
+                .HasForeignKey(b => b.VoucherID)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<HandoverAndReturn>()
