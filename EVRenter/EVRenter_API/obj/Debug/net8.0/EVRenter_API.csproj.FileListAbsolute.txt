@@ -377,3 +377,4 @@ D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_API\obj\Debug\net8.0\refin
 D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_API\obj\Debug\net8.0\EVRenter_API.pdb
 D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_API\obj\Debug\net8.0\EVRenter_API.genruntimeconfig.cache
 D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_API\obj\Debug\net8.0\ref\EVRenter_API.dll
+D:\FPT\9th_2\SWP391\CodeBE\EVRental\EVRenter\EVRenter_API\obj\Debug\net8.0\EVRenter_API.MvcApplicationPartsAssemblyInfo.cs

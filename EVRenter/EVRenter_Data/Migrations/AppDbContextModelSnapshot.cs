@@ -22,6 +22,31 @@ namespace EVRenter_Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("EVRenter_Data.Entities.Amenities", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AmenityName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("ModelID")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ModelID");
+
+                    b.ToTable("Amenities");
+                });
+
             modelBuilder.Entity("EVRenter_Data.Entities.Booking", b =>
                 {
                     b.Property<int>("Id")
@@ -311,6 +336,10 @@ namespace EVRenter_Data.Migrations
                     b.Property<int>("TrunkCapatity")
                         .HasColumnType("int");
 
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Models");
@@ -539,6 +568,17 @@ namespace EVRenter_Data.Migrations
                     b.ToTable("Vouchers");
                 });
 
+            modelBuilder.Entity("EVRenter_Data.Entities.Amenities", b =>
+                {
+                    b.HasOne("EVRenter_Data.Entities.Model", "Model")
+                        .WithMany("Amenities")
+                        .HasForeignKey("ModelID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Model");
+                });
+
             modelBuilder.Entity("EVRenter_Data.Entities.Booking", b =>
                 {
                     b.HasOne("EVRenter_Data.Entities.Model", "Model")
@@ -738,6 +778,8 @@ namespace EVRenter_Data.Migrations
 
             modelBuilder.Entity("EVRenter_Data.Entities.Model", b =>
                 {
+                    b.Navigation("Amenities");
+
                     b.Navigation("Bookings");
 
                     b.Navigation("Feedbacks");

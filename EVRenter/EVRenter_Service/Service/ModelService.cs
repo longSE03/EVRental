@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
+using Azure.Core;
 using EVRenter_Data.Entities;
 using EVRenter_Repository.UnitOfWork;
 using EVRenter_Service.RequestModel;
@@ -21,6 +22,7 @@ namespace EVRenter_Service.Service
         Task<ModelResponseModel?> UpdateModelAsync(int id, ModelUpdateRequest request);
         Task<bool> DeleteModelAsync(int id);
         Task<IEnumerable<ModelResponseModel>> GetModelByStationAsync(int stationId);
+        Task RebootModelQuantitiesAsync();
     }
     public class ModelService : IModelService
     {
@@ -46,7 +48,7 @@ namespace EVRenter_Service.Service
         {
             // Get the user with basic information
             var model = await _unitOfWork.Repository<Model>().AsQueryable()
-                .Where(u => u.Id == id)
+                .Where(u => u.Id == id && !u.IsDelete)
                 .ProjectTo<ModelResponseModel>(_mapper.ConfigurationProvider)
                 .FirstOrDefaultAsync();
 
@@ -63,6 +65,35 @@ namespace EVRenter_Service.Service
 
             return model;
         }
+
+        public async Task RebootModelQuantitiesAsync()
+        {
+            // Lấy danh sách Model + số lượng Vehicle thực tế
+            var modelCounts = await _unitOfWork.Repository<Vehicle>()
+                .AsQueryable()
+                .Where(x => !x.IsDelete)
+                .GroupBy(v => v.ModelID)
+                .Select(g => new
+                {
+                    ModelID = g.Key,
+                    VehicleCount = g.Count()
+                })
+                .ToListAsync();
+
+            // Lấy toàn bộ Model
+            var models = await _unitOfWork.Repository<Model>().AsQueryable()
+                .Where(x => !x.IsDelete).ToListAsync();
+
+            foreach (var model in models)
+            {
+                var count = modelCounts.FirstOrDefault(c => c.ModelID == model.Id)?.VehicleCount ?? 0;
+                model.Quantity = count;
+                await _unitOfWork.Repository<Model>().UpdateAsync(model);
+            }
+
+            await _unitOfWork.SaveChangesAsync();
+        }
+
 
 
         public async Task<ModelResponseModel> CreateModelAsync(ModelRequestModel request)
@@ -107,6 +138,11 @@ namespace EVRenter_Service.Service
                 existingModel.ModelName = request.ModelName;
                 hasUpdates = true;
             }
+            if (!string.IsNullOrEmpty(request.Type))
+            {
+                existingModel.Type = request.Type;
+                hasUpdates = true;
+            }
             if (request.Seat.HasValue)
             {
                 existingModel.Seat = request.Seat.Value;
@@ -144,10 +180,38 @@ namespace EVRenter_Service.Service
 
         public async Task<bool> DeleteModelAsync(int id)
         {
-            var user = await _unitOfWork.Repository<Model>().GetById(id);
-            if (user == null) return false;
+            var model = await _unitOfWork.Repository<Model>().GetById(id);
+            if (model == null || model.IsDelete) return false;
 
-            user.IsDelete = true;
+            var vehicles = await _unitOfWork.Repository<Vehicle>().AsQueryable()
+               .Where(u => u.ModelID == id && !u.IsDelete)
+               .ToListAsync();
+
+            var price = await _unitOfWork.Repository<RentalPrice>().AsQueryable()
+               .Where(u => u.ModelID == id && !u.IsDelete)
+               .FirstOrDefaultAsync();
+
+            var amanities = await _unitOfWork.Repository<Amenities>().AsQueryable()
+                .Where(u => u.ModelID != id && !u.IsDelete)
+                .ToListAsync();
+
+            model.IsDelete = true;
+            if (price != null) { price.IsDelete = false; }
+            if (vehicles != null)
+            {
+                foreach (var vehicle in vehicles)
+                {
+                    vehicle.IsDelete = false;
+                }
+            }
+            if (amanities != null)
+            {
+                foreach (var aman in amanities)
+                {
+                    aman.IsDelete = false;
+                }
+            }
+
             await _unitOfWork.SaveChangesAsync();
 
             return true;

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace EVRenter_Data.Entities
 {
-    internal class Amenities
+    public class Amenities : BaseEntity
     {
+        public string AmenityName { get; set; }
+        public int ModelID { get; set; }
+        public virtual Model Model { get; set; }
     }
 }

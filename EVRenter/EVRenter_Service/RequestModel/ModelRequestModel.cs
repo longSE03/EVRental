@@ -9,6 +9,7 @@ namespace EVRenter_Service.RequestModel
     public class ModelRequestModel
     {
         public string ModelName { get; set; }
+        public string Type { get; set; }
         public int Seat { get; set; }
         public int Range { get; set; }
         public int TrunkCapatity { get; set; }
@@ -19,6 +20,7 @@ namespace EVRenter_Service.RequestModel
     public class ModelUpdateRequest
     {
         public string? ModelName { get; set; }
+        public string? Type { get; set; }
         public int? Seat { get; set; }
         public int? Range { get; set; }
         public int? TrunkCapatity { get; set; }

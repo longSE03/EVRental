@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
+using Azure.Core;
 using EVRenter_Data.Entities;
 using EVRenter_Repository.UnitOfWork;
 using EVRenter_Service.RequestModel;
@@ -52,14 +53,13 @@ namespace EVRenter_Service.Service
             return vehicle;
         }
 
-
         public async Task<VehicleResponseModel> CreateVehicleAsync(VehicleRequestModel request)
         {
             if (request == null)
                 throw new ArgumentException("Invalid request data.");
 
             var model = await _unitOfWork.Repository<Model>().AsQueryable()
-                .Where(u => u.Id == request.ModelID)
+                .Where(u => u.Id == request.ModelID && !u.IsDelete)
                 .FirstOrDefaultAsync();
             if (model == null)
             {
@@ -67,22 +67,26 @@ namespace EVRenter_Service.Service
             }
 
             var station = await _unitOfWork.Repository<Station>().AsQueryable()
-                .Where(u => u.Id == request.StationID)
+                .Where(u => u.Id == request.StationID && !u.IsDelete)
                 .FirstOrDefaultAsync();
             if (station == null)
             {
                 throw new Exception("Station not found");
             }
 
-            var existingVehicle = await _unitOfWork.Repository<Vehicle>().FindAsync(u => u.PlateNumber == request.PlateNumber);
+            var existingVehicle = await _unitOfWork.Repository<Vehicle>().AsQueryable().
+                Where(u => u.PlateNumber == request.PlateNumber && !u.IsDelete).FirstOrDefaultAsync();
             if (existingVehicle != null)
             {
                 throw new InvalidOperationException("Plate Number already exists.");
             }
 
             var vehicle = _mapper.Map<Vehicle>(request);
-
             await _unitOfWork.Repository<Vehicle>().InsertAsync(vehicle);
+
+            model.Quantity++;
+            await _unitOfWork.Repository<Model>().UpdateAsync(model);
+
             await _unitOfWork.SaveChangesAsync();
 
             var createdVehicle = await _unitOfWork.Repository<Vehicle>()
@@ -107,13 +111,6 @@ namespace EVRenter_Service.Service
                 .FirstOrDefaultAsync();
 
             if (existingVehicle == null) return null;
-            //if (existingVehicle.ModelID == null)
-            //{
-            //    var existingModel = await _unitOfWork.Repository<Model>()
-            //    .AsQueryable()
-            //    .Where(s => s.Id == request. && !s.IsDelete)
-            //    .FirstOrDefaultAsync();
-            //}
 
             // Kiểm tra xem có bất kỳ trường nào được cập nhật không
             bool hasUpdates = false;
@@ -173,6 +170,16 @@ namespace EVRenter_Service.Service
             if (vehicle == null) return false;
 
             vehicle.IsDelete = true;
+
+            var model = await _unitOfWork.Repository<Model>().AsQueryable()
+                .Where(u => u.Id == vehicle.ModelID && !u.IsDelete)
+                .FirstOrDefaultAsync();
+            if (model == null)
+            {
+                throw new Exception("Model not found");
+            }
+            model.Quantity--;
+
             await _unitOfWork.SaveChangesAsync();
 
             return true;

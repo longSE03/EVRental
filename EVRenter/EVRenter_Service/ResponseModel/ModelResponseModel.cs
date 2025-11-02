@@ -11,6 +11,8 @@ namespace EVRenter_Service.ResponseModel
     {
         public int Id { get; set; }
         public string ModelName { get; set; }
+        public PriceResponseModel Price { get; set; }
+        public DepositResponseModel Deposit { get; set; }
         public int Quantity { get; set; }
         public int Seat { get; set; }
         public int Range { get; set; }
@@ -18,7 +20,21 @@ namespace EVRenter_Service.ResponseModel
         public int Hoursepower { get; set; }
         public int MoveLimit { get; set; }
 
-        public virtual RentalPrice RentalPrice { get; set; }
+        //public virtual RentalPrice RentalPrice { get; set; }
         public virtual ICollection<Vehicle> Vehicles { get; set; }
+    }
+
+    public class PriceResponseModel
+    {
+        public decimal Daily { get; set; }
+        public decimal Weekly { get; set; }
+        public decimal Monthly { get; set; }
+    }
+
+    public class DepositResponseModel
+    {
+        public decimal Daily { get; set; }
+        public decimal Weekly { get; set; }
+        public decimal Monthly { get; set; }
     }
 }

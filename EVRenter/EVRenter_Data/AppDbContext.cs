@@ -26,6 +26,7 @@ namespace EVRenter_Data
         public DbSet<Image> Images { get; set; }
         public DbSet<ModelImage> ModelImages { get; set; }
         public DbSet<Voucher> Vouchers { get; set; }
+        public DbSet<Amenities> Amenities { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -141,6 +142,13 @@ namespace EVRenter_Data
                 .HasOne(mi => mi.Image)
                 .WithMany(m => m.ModelImages)
                 .HasForeignKey(mi => mi.ImageID);
+
+            modelBuilder.Entity<Amenities>()
+                .HasKey(a => a.Id);
+            modelBuilder.Entity<Amenities>()
+                .HasOne(a => a.Model)
+                .WithMany(m => m.Amenities)
+                .HasForeignKey(a => a.ModelID);
         }
     }
 }

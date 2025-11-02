@@ -9,6 +9,7 @@ namespace EVRenter_Data.Entities
     public class Model : BaseEntity
     {
         public string ModelName { get; set; }
+        public string Type { get; set; }
         public int Quantity { get; set; }
         public int Seat { get; set; }
         public int Range { get; set; }
@@ -20,5 +21,6 @@ namespace EVRenter_Data.Entities
         public virtual ICollection<Booking> Bookings { get; set; }
         public virtual ICollection<Feedback> Feedbacks { get; set; }
         public virtual ICollection<ModelImage> ModelImages { get; set; }
+        public virtual ICollection<Amenities> Amenities { get; set; }
     }
 }

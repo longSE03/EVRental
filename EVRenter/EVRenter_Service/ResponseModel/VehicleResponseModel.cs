@@ -12,9 +12,9 @@ namespace EVRenter_Service.ResponseModel
         public int Id { get; set; }
         public string PlateNumber { get; set; }
         public int ModelID { get; set; }
-        public virtual Model Model { get; set; }
+        public string ModelName { get; set; }
         public int StationID { get; set; }
-        public virtual Station Station { get; set; }
+        public string StationName { get; set; }
         public int Status { get; set; }
     }
 }

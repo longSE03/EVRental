@@ -16,11 +16,18 @@ namespace EVRenter_API.Controllers
             _modelService = modelService;
         }
 
-        [HttpGet]
+        [HttpGet("GetAll")]
         public async Task<IActionResult> GetAllModels()
         {
             var response = await _modelService.GetAllModel();
             return Ok(response);
+        }
+
+        [HttpGet("SyncQuantity")]
+        public async Task<IActionResult> SyncQuantity()
+        {
+            await _modelService.RebootModelQuantitiesAsync();
+            return Ok();
         }
 
         [HttpGet("{id}")]

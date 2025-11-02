@@ -14,9 +14,11 @@ namespace EVRenter_Service.Mapping
     {
         public VehicleMapping()
         {
-            CreateMap<Vehicle, VehicleResponseModel>();
+            CreateMap<Vehicle, VehicleResponseModel>()
+                .ForMember(dest => dest.ModelName, opt => opt.MapFrom(src => src.Model.ModelName))
+                .ForMember(dest => dest.StationName, opt => opt.MapFrom(src => src.Station.Name));
             CreateMap<VehicleRequestModel, Vehicle>();
-            CreateMap<VehicleUpdateRequest,  Vehicle>();
+            CreateMap<VehicleUpdateRequest, Vehicle>();
         }
     }
 }
