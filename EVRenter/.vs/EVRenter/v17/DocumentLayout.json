@@ -3,12 +3,96 @@
   "WorkspaceRootPath": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251102143344_UpdateProfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EVRenter_Data\\Migrations\\20251102143344_UpdateProfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\carimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\carimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\driverlicenseimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\driverlicenseimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\renterprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\renterprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\idimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\idimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\modelimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\modelimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\staffprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\staffprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\service\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\service\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\mapping\\vehiclemapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\mapping\\vehiclemapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\responsemodel\\vehicleresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\responsemodel\\vehicleresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\service\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\service\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\requestmodel\\vehiclerequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\requestmodel\\vehiclerequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251102132851_ItemCar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EVRenter_Data\\Migrations\\20251102132851_ItemCar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251102132558_ItemCar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EVRenter_Data\\Migrations\\20251102132558_ItemCar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\itemcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\itemcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\caritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\caritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E5961D5-246F-4CD2-9323-650DD70163DF}|EVRenter_API\\EVRenter_API.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_api\\controllers\\modelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,32 +107,12 @@
       "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\service\\modelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\service\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\service\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\service\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\service\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\requestmodel\\bookingrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\requestmodel\\bookingrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\mapping\\vehiclemapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\mapping\\vehiclemapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\mapping\\modelmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\mapping\\modelmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\responsemodel\\vehicleresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\responsemodel\\vehicleresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\requestmodel\\vehiclerequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\requestmodel\\vehiclerequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\requestmodel\\modelrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,20 +123,8 @@
       "RelativeMoniker": "D:0:0:{37206D53-9BD9-4C0A-BEF4-BB29C90FD617}|EVRenter_Repository\\EVRenter_Repository.csproj|solutionrelative:evrenter_repository\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251102120200_UpdateAmanities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EVRenter_Data\\Migrations\\20251102120200_UpdateAmanities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\amenities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\amenities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\responsemodel\\modelresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,10 +133,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\rentalprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\rentalprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251102113214_UpdateModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EVRenter_Data\\Migrations\\20251102113214_UpdateModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\voucher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -139,10 +187,6 @@
       "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251022141641_RemoveRentalPriceRelationFromVehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EVRenter_Data\\Migrations\\20251022141641_RemoveRentalPriceRelationFromVehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -157,14 +201,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\mapping\\usermapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\mapping\\usermapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\service\\stationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -185,10 +221,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\requestmodel\\userrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|solutionrelative:evrenter_service\\requestmodel\\userrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43F0B4AE-A5A3-4104-B6FC-3457EA6D17BF}|EVRenter_Service\\EVRenter_Service.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_service\\evrenter_service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -217,14 +249,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{37206D53-9BD9-4C0A-BEF4-BB29C90FD617}|EVRenter_Repository\\EVRenter_Repository.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_repository\\utils\\authentools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37206D53-9BD9-4C0A-BEF4-BB29C90FD617}|EVRenter_Repository\\EVRenter_Repository.csproj|solutionrelative:evrenter_repository\\utils\\authentools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\modelimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\entities\\modelimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\entities\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -285,6 +309,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\migrations\\20251022142003_dbinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\migrations\\20251022142003_dbinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\migrations\\20251102120200_updateamanities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\migrations\\20251102120200_updateamanities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|d:\\fpt\\9th_2\\swp391\\codebe\\evrental\\evrenter\\evrenter_data\\migrations\\20251102113214_updatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC6B82F-F615-47B3-B105-D00A55EA5797}|EVRenter_Data\\EVRenter_Data.csproj|solutionrelative:evrenter_data\\migrations\\20251102113214_updatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -294,7 +326,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -321,99 +353,8 @@
               "Name": "ST:5:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ItemCategory.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\ItemCategory.cs",
-              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\ItemCategory.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\ItemCategory.cs",
-              "RelativeToolTip": "EVRenter_Data\\Entities\\ItemCategory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T12:43:29.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CarItem.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\CarItem.cs",
-              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\CarItem.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\CarItem.cs",
-              "RelativeToolTip": "EVRenter_Data\\Entities\\CarItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T12:42:20.436Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VehicleMapping.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Mapping\\VehicleMapping.cs",
-              "RelativeDocumentMoniker": "EVRenter_Service\\Mapping\\VehicleMapping.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Mapping\\VehicleMapping.cs",
-              "RelativeToolTip": "EVRenter_Service\\Mapping\\VehicleMapping.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T13:57:45.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "VehicleService.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Service\\VehicleService.cs",
-              "RelativeDocumentMoniker": "EVRenter_Service\\Service\\VehicleService.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Service\\VehicleService.cs",
-              "RelativeToolTip": "EVRenter_Service\\Service\\VehicleService.cs",
-              "ViewState": "AgIAAKYAAAAAAAAAAAAcwDUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T13:15:03.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ModelService.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Service\\ModelService.cs",
-              "RelativeDocumentMoniker": "EVRenter_Service\\Service\\ModelService.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Service\\ModelService.cs",
-              "RelativeToolTip": "EVRenter_Service\\Service\\ModelService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T12:31:10.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VehicleController.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_API\\Controllers\\VehicleController.cs",
-              "RelativeDocumentMoniker": "EVRenter_API\\Controllers\\VehicleController.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_API\\Controllers\\VehicleController.cs",
-              "RelativeToolTip": "EVRenter_API\\Controllers\\VehicleController.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAowFAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T13:56:52.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ModelController.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_API\\Controllers\\ModelController.cs",
-              "RelativeDocumentMoniker": "EVRenter_API\\Controllers\\ModelController.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_API\\Controllers\\ModelController.cs",
-              "RelativeToolTip": "EVRenter_API\\Controllers\\ModelController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAA3wCAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T13:08:04.798Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -421,20 +362,342 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20251102143344_UpdateProfile.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251102143344_UpdateProfile.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Migrations\\20251102143344_UpdateProfile.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251102143344_UpdateProfile.cs",
+              "RelativeToolTip": "EVRenter_Data\\Migrations\\20251102143344_UpdateProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:33:44.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarImage.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\CarImage.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\CarImage.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\CarImage.cs",
+              "RelativeToolTip": "EVRenter_Data\\Entities\\CarImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:32:23.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DriverLicenseImage.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\DriverLicenseImage.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\DriverLicenseImage.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\DriverLicenseImage.cs",
+              "RelativeToolTip": "EVRenter_Data\\Entities\\DriverLicenseImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:29:36.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RenterProfile.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\RenterProfile.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\RenterProfile.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\RenterProfile.cs",
+              "RelativeToolTip": "EVRenter_Data\\Entities\\RenterProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:18:36.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\AppDbContext.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\AppDbContext.cs",
+              "RelativeToolTip": "EVRenter_Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAM8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:41:17.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IDImage.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\IDImage.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\IDImage.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\IDImage.cs",
+              "RelativeToolTip": "EVRenter_Data\\Entities\\IDImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:23:56.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\User.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\User.cs",
+              "RelativeToolTip": "EVRenter_Data\\Entities\\User.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBYAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T12:50:43.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StaffProfile.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\StaffProfile.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\StaffProfile.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\StaffProfile.cs",
+              "RelativeToolTip": "EVRenter_Data\\Entities\\StaffProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:09:03.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ModelImage.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\ModelImage.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\ModelImage.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\ModelImage.cs",
+              "RelativeToolTip": "EVRenter_Data\\Entities\\ModelImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T09:25:12.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Image.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Image.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\Image.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Image.cs",
+              "RelativeToolTip": "EVRenter_Data\\Entities\\Image.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T09:23:35.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Station.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Station.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\Station.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Station.cs",
+              "RelativeToolTip": "EVRenter_Data\\Entities\\Station.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T08:29:20.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Service\\BookingService.cs",
+              "RelativeDocumentMoniker": "EVRenter_Service\\Service\\BookingService.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Service\\BookingService.cs",
+              "RelativeToolTip": "EVRenter_Service\\Service\\BookingService.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAIwEUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:29:18.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Vehicle.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\Vehicle.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Vehicle.cs",
+              "RelativeToolTip": "EVRenter_Data\\Entities\\Vehicle.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T08:42:23.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "VehicleMapping.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Mapping\\VehicleMapping.cs",
+              "RelativeDocumentMoniker": "EVRenter_Service\\Mapping\\VehicleMapping.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Mapping\\VehicleMapping.cs",
+              "RelativeToolTip": "EVRenter_Service\\Mapping\\VehicleMapping.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAWwBMAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T13:57:45.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "VehicleResponseModel.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\ResponseModel\\VehicleResponseModel.cs",
+              "RelativeDocumentMoniker": "EVRenter_Service\\ResponseModel\\VehicleResponseModel.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\ResponseModel\\VehicleResponseModel.cs",
+              "RelativeToolTip": "EVRenter_Service\\ResponseModel\\VehicleResponseModel.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T13:16:16.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "VehicleService.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Service\\VehicleService.cs",
+              "RelativeDocumentMoniker": "EVRenter_Service\\Service\\VehicleService.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Service\\VehicleService.cs",
+              "RelativeToolTip": "EVRenter_Service\\Service\\VehicleService.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAmwCwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T13:15:03.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "Model.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Model.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\Model.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Model.cs",
+              "RelativeToolTip": "EVRenter_Data\\Entities\\Model.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA5wBYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T08:43:41.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ItemCategory.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\ItemCategory.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\ItemCategory.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\ItemCategory.cs",
+              "RelativeToolTip": "EVRenter_Data\\Entities\\ItemCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:43:29.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "VehicleRequestModel.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\RequestModel\\VehicleRequestModel.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\RequestModel\\VehicleRequestModel.cs",
               "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\RequestModel\\VehicleRequestModel.cs",
               "RelativeToolTip": "EVRenter_Service\\RequestModel\\VehicleRequestModel.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAIAywBAAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAD4vxAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T13:42:39.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 19,
+              "Title": "20251102132558_ItemCar.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251102132558_ItemCar.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Migrations\\20251102132558_ItemCar.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251102132558_ItemCar.cs",
+              "RelativeToolTip": "EVRenter_Data\\Migrations\\20251102132558_ItemCar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:25:59.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20251102132851_ItemCar.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251102132851_ItemCar.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Migrations\\20251102132851_ItemCar.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251102132851_ItemCar.cs",
+              "RelativeToolTip": "EVRenter_Data\\Migrations\\20251102132851_ItemCar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T13:28:51.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CarItem.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\CarItem.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\CarItem.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\CarItem.cs",
+              "RelativeToolTip": "EVRenter_Data\\Entities\\CarItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T12:42:20.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\BaseEntity.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "EVRenter_Data\\Entities\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T12:51:27.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ModelController.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_API\\Controllers\\ModelController.cs",
+              "RelativeDocumentMoniker": "EVRenter_API\\Controllers\\ModelController.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_API\\Controllers\\ModelController.cs",
+              "RelativeToolTip": "EVRenter_API\\Controllers\\ModelController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA3wCAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T13:08:04.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "VehicleController.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_API\\Controllers\\VehicleController.cs",
+              "RelativeDocumentMoniker": "EVRenter_API\\Controllers\\VehicleController.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_API\\Controllers\\VehicleController.cs",
+              "RelativeToolTip": "EVRenter_API\\Controllers\\VehicleController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAowFAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T13:56:52.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ModelService.cs",
+              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Service\\ModelService.cs",
+              "RelativeDocumentMoniker": "EVRenter_Service\\Service\\ModelService.cs",
+              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Service\\ModelService.cs",
+              "RelativeToolTip": "EVRenter_Service\\Service\\ModelService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T12:31:10.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "BookingRequestModel.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\RequestModel\\BookingRequestModel.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\RequestModel\\BookingRequestModel.cs",
@@ -442,25 +705,11 @@
               "RelativeToolTip": "EVRenter_Service\\RequestModel\\BookingRequestModel.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAzwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T01:32:36.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T01:32:36.673Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookingService.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Service\\BookingService.cs",
-              "RelativeDocumentMoniker": "EVRenter_Service\\Service\\BookingService.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Service\\BookingService.cs",
-              "RelativeToolTip": "EVRenter_Service\\Service\\BookingService.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAIwEUAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T14:29:18.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 28,
               "Title": "ModelRequestModel.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\RequestModel\\ModelRequestModel.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\RequestModel\\ModelRequestModel.cs",
@@ -468,25 +717,11 @@
               "RelativeToolTip": "EVRenter_Service\\RequestModel\\ModelRequestModel.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T12:40:18.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T12:40:18.879Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "VehicleResponseModel.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\ResponseModel\\VehicleResponseModel.cs",
-              "RelativeDocumentMoniker": "EVRenter_Service\\ResponseModel\\VehicleResponseModel.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\ResponseModel\\VehicleResponseModel.cs",
-              "RelativeToolTip": "EVRenter_Service\\ResponseModel\\VehicleResponseModel.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T13:16:16.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 27,
               "Title": "ModelMapping.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Mapping\\ModelMapping.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\Mapping\\ModelMapping.cs",
@@ -494,25 +729,11 @@
               "RelativeToolTip": "EVRenter_Service\\Mapping\\ModelMapping.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAuwBEAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T13:04:09.621Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T13:04:09.621Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Model.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Model.cs",
-              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\Model.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Model.cs",
-              "RelativeToolTip": "EVRenter_Data\\Entities\\Model.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA7wBYAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T08:43:41.155Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 30,
               "Title": "Amenities.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Amenities.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\Amenities.cs",
@@ -520,12 +741,11 @@
               "RelativeToolTip": "EVRenter_Data\\Entities\\Amenities.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T06:34:11.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T06:34:11.655Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 77,
               "Title": "20251102120200_UpdateAmanities.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251102120200_UpdateAmanities.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Migrations\\20251102120200_UpdateAmanities.cs",
@@ -533,12 +753,11 @@
               "RelativeToolTip": "EVRenter_Data\\Migrations\\20251102120200_UpdateAmanities.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T12:02:00.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T12:02:00.951Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 29,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Repository\\Repositories\\GenericRepository.cs",
               "RelativeDocumentMoniker": "EVRenter_Repository\\Repositories\\GenericRepository.cs",
@@ -546,25 +765,11 @@
               "RelativeToolTip": "EVRenter_Repository\\Repositories\\GenericRepository.cs",
               "ViewState": "AgIAANsAAAAAAAAAAAA+wOcAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T09:35:01.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T09:35:01.342Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "EVRenter_Data\\AppDbContext.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\AppDbContext.cs",
-              "RelativeToolTip": "EVRenter_Data\\AppDbContext.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAAAJUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T08:41:17.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 31,
               "Title": "ModelResponseModel.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\ResponseModel\\ModelResponseModel.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\ResponseModel\\ModelResponseModel.cs",
@@ -572,12 +777,11 @@
               "RelativeToolTip": "EVRenter_Service\\ResponseModel\\ModelResponseModel.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAgwBYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T12:32:25.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T12:32:25.351Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 34,
               "Title": "Booking.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Booking.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\Booking.cs",
@@ -589,7 +793,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 32,
               "Title": "RentalPrice.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\RentalPrice.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\RentalPrice.cs",
@@ -597,12 +801,11 @@
               "RelativeToolTip": "EVRenter_Data\\Entities\\RentalPrice.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T08:50:31.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T08:50:31.066Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 78,
               "Title": "20251102113214_UpdateModel.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251102113214_UpdateModel.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Migrations\\20251102113214_UpdateModel.cs",
@@ -610,12 +813,11 @@
               "RelativeToolTip": "EVRenter_Data\\Migrations\\20251102113214_UpdateModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T11:32:14.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T11:32:14.79Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 33,
               "Title": "Voucher.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Voucher.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\Voucher.cs",
@@ -627,7 +829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 36,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_API\\Program.cs",
               "RelativeDocumentMoniker": "EVRenter_API\\Program.cs",
@@ -639,7 +841,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 37,
               "Title": "BookingMapping.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Mapping\\BookingMapping.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\Mapping\\BookingMapping.cs",
@@ -651,7 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 35,
               "Title": "BookingController.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_API\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "EVRenter_API\\Controllers\\BookingController.cs",
@@ -663,7 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 38,
               "Title": "BookingResponseModel.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\ResponseModel\\BookingResponseModel.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\ResponseModel\\BookingResponseModel.cs",
@@ -675,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 39,
               "Title": "RentalPriceService.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Service\\RentalPriceService.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\Service\\RentalPriceService.cs",
@@ -687,7 +889,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 40,
               "Title": "RentalPriceResponse.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\ResponseModel\\RentalPriceResponse.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\ResponseModel\\RentalPriceResponse.cs",
@@ -699,7 +901,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 41,
               "Title": "UserResponseModel.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\ResponseModel\\UserResponseModel.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\ResponseModel\\UserResponseModel.cs",
@@ -711,7 +913,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 42,
               "Title": "RentalPriceController.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_API\\Controllers\\RentalPriceController.cs",
               "RelativeDocumentMoniker": "EVRenter_API\\Controllers\\RentalPriceController.cs",
@@ -723,7 +925,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 44,
               "Title": "PriceMapping.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Mapping\\PriceMapping.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\Mapping\\PriceMapping.cs",
@@ -735,7 +937,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 43,
               "Title": "PriceRequestModel.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\RequestModel\\PriceRequestModel.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\RequestModel\\PriceRequestModel.cs",
@@ -747,19 +949,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Vehicle.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Vehicle.cs",
-              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\Vehicle.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Vehicle.cs",
-              "RelativeToolTip": "EVRenter_Data\\Entities\\Vehicle.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T08:42:23.555Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 45,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Service\\UserService.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\Service\\UserService.cs",
@@ -771,7 +961,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 76,
               "Title": "20251022142003_DBInit.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251022142003_DBInit.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Migrations\\20251022142003_DBInit.cs",
@@ -783,7 +973,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 46,
               "Title": "20251022141641_RemoveRentalPriceRelationFromVehicle.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251022141641_RemoveRentalPriceRelationFromVehicle.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Migrations\\20251022141641_RemoveRentalPriceRelationFromVehicle.cs",
@@ -795,7 +985,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 48,
               "Title": "StationMapping.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Mapping\\StationMapping.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\Mapping\\StationMapping.cs",
@@ -807,7 +997,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 49,
               "Title": "UserMapping.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Mapping\\UserMapping.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\Mapping\\UserMapping.cs",
@@ -819,7 +1009,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 47,
               "Title": "StationController.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_API\\Controllers\\StationController.cs",
               "RelativeDocumentMoniker": "EVRenter_API\\Controllers\\StationController.cs",
@@ -831,31 +1021,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Station.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Station.cs",
-              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\Station.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Station.cs",
-              "RelativeToolTip": "EVRenter_Data\\Entities\\Station.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T08:29:20.715Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\BaseEntity.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\BaseEntity.cs",
-              "RelativeToolTip": "EVRenter_Data\\Entities\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T12:51:27.036Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 50,
               "Title": "StationService.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\Service\\StationService.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\Service\\StationService.cs",
@@ -867,7 +1033,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 51,
               "Title": "StationResponseModel.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\ResponseModel\\StationResponseModel.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\ResponseModel\\StationResponseModel.cs",
@@ -879,7 +1045,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 53,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_API\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "EVRenter_API\\Controllers\\UserController.cs",
@@ -891,7 +1057,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 52,
               "Title": "StationRequestModel.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\RequestModel\\StationRequestModel.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\RequestModel\\StationRequestModel.cs",
@@ -903,7 +1069,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 54,
               "Title": "UserRequestModel.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\RequestModel\\UserRequestModel.cs",
               "RelativeDocumentMoniker": "EVRenter_Service\\RequestModel\\UserRequestModel.cs",
@@ -915,19 +1081,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\User.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\User.cs",
-              "RelativeToolTip": "EVRenter_Data\\Entities\\User.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T12:50:43.529Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 55,
               "Title": "EVRenter_Service.csproj",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Service\\EVRenter_Service.csproj",
               "RelativeDocumentMoniker": "EVRenter_Service\\EVRenter_Service.csproj",
@@ -939,7 +1093,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 61,
               "Title": "AuthenTools.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Repository\\Utils\\AuthenTools.cs",
               "RelativeDocumentMoniker": "EVRenter_Repository\\Utils\\AuthenTools.cs",
@@ -951,7 +1105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 60,
               "Title": "HashHelper.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Repository\\Utils\\HashHelper.cs",
               "RelativeDocumentMoniker": "EVRenter_Repository\\Utils\\HashHelper.cs",
@@ -963,7 +1117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 56,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Repository\\UnitOfWork\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "EVRenter_Repository\\UnitOfWork\\UnitOfWork.cs",
@@ -975,7 +1129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 59,
               "Title": "PasswordTools.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Repository\\Utils\\PasswordTools.cs",
               "RelativeDocumentMoniker": "EVRenter_Repository\\Utils\\PasswordTools.cs",
@@ -987,7 +1141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 57,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Repository\\UnitOfWork\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "EVRenter_Repository\\UnitOfWork\\IUnitOfWork.cs",
@@ -999,7 +1153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 58,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Repository\\Repositories\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "EVRenter_Repository\\Repositories\\IGenericRepository.cs",
@@ -1011,31 +1165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "ModelImage.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\ModelImage.cs",
-              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\ModelImage.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\ModelImage.cs",
-              "RelativeToolTip": "EVRenter_Data\\Entities\\ModelImage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T09:25:12.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "Image.cs",
-              "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Image.cs",
-              "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\Image.cs",
-              "ToolTip": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Image.cs",
-              "RelativeToolTip": "EVRenter_Data\\Entities\\Image.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T09:23:35.414Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 62,
               "Title": "Feedback.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Feedback.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\Feedback.cs",
@@ -1047,7 +1177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 63,
               "Title": "ExtraFee.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\ExtraFee.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\ExtraFee.cs",
@@ -1059,7 +1189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 64,
               "Title": "20251022091224_DbInit.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251022091224_DbInit.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Migrations\\20251022091224_DbInit.cs",
@@ -1071,7 +1201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 65,
               "Title": "20251022091113_DbInit.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251022091113_DbInit.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Migrations\\20251022091113_DbInit.cs",
@@ -1083,7 +1213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 66,
               "Title": "Payment.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\Payment.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\Payment.cs",
@@ -1095,7 +1225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 67,
               "Title": "HandoverAndReturn.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\HandoverAndReturn.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\HandoverAndReturn.cs",
@@ -1107,7 +1237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 68,
               "Title": "FeeType.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Entities\\FeeType.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Entities\\FeeType.cs",
@@ -1119,7 +1249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 69,
               "Title": "20251022090810_DbInit.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\Migrations\\20251022090810_DbInit.cs",
               "RelativeDocumentMoniker": "EVRenter_Data\\Migrations\\20251022090810_DbInit.cs",
@@ -1131,7 +1261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 70,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_API\\appsettings.json",
               "RelativeDocumentMoniker": "EVRenter_API\\appsettings.json",
@@ -1143,7 +1273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 71,
               "Title": "EVRenter_API.csproj",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_API\\EVRenter_API.csproj",
               "RelativeDocumentMoniker": "EVRenter_API\\EVRenter_API.csproj",
@@ -1155,7 +1285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 72,
               "Title": "EVRenter_Repository.csproj",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Repository\\EVRenter_Repository.csproj",
               "RelativeDocumentMoniker": "EVRenter_Repository\\EVRenter_Repository.csproj",
@@ -1167,7 +1297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 73,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Repository\\Class1.cs",
               "RelativeDocumentMoniker": "EVRenter_Repository\\Class1.cs",
@@ -1179,7 +1309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 74,
               "Title": "EVRenter_Data.csproj",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_Data\\EVRenter_Data.csproj",
               "RelativeDocumentMoniker": "EVRenter_Data\\EVRenter_Data.csproj",
@@ -1191,7 +1321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 75,
               "Title": "EVRenter_CM.csproj",
               "DocumentMoniker": "D:\\FPT\\9th_2\\SWP391\\CodeBE\\EVRental\\EVRenter\\EVRenter_CM\\EVRenter_CM.csproj",
               "RelativeDocumentMoniker": "EVRenter_CM\\EVRenter_CM.csproj",

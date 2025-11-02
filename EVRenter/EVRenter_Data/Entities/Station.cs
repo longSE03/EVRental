@@ -16,5 +16,6 @@ namespace EVRenter_Data.Entities
 
         public virtual ICollection<Vehicle> Vehicles { get; set; }
         public virtual ICollection<HandoverAndReturn> HandoverAndReturns { get; set; }
+        public virtual ICollection<StaffProfile> StaffProfiles { get; set; }
     }
 }

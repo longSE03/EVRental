@@ -19,5 +19,7 @@ namespace EVRenter_Data.Entities
         public virtual ICollection<Payment> Payments { get; set; }
         public virtual ICollection<ExtraFee> ExtraFees { get; set; }
         public virtual ICollection<Feedback> Feedbacks { get; set; }
+        public virtual StaffProfile StaffProfile { get; set; }
+        public virtual RenterProfile RenterProfile { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,12 @@ namespace EVRenter_Data
         public DbSet<ModelImage> ModelImages { get; set; }
         public DbSet<Voucher> Vouchers { get; set; }
         public DbSet<Amenities> Amenities { get; set; }
+        public DbSet<ItemCategory> ItemCategories { get; set; }
+        public DbSet<CarItem> CarItems { get; set; }
+        public DbSet<StaffProfile> StaffProfiles { get; set; }
+        public DbSet<RenterProfile> RenterProfiles { get; set; }
+        public DbSet<IDImage> IDImages { get; set; }
+        public DbSet<DriverLicenseImage> DriverLicenseImages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -149,6 +156,64 @@ namespace EVRenter_Data
                 .HasOne(a => a.Model)
                 .WithMany(m => m.Amenities)
                 .HasForeignKey(a => a.ModelID);
+
+            modelBuilder.Entity<CarItem>()
+                .HasKey(ci => ci.Id);
+            modelBuilder.Entity<CarItem>()
+                .HasOne(ci => ci.Category)
+                .WithMany(c => c.Items)
+                .HasForeignKey(ci => ci.CategoryID);
+            modelBuilder.Entity<CarItem>()
+                .HasOne(ci => ci.Vehicle)
+                .WithMany(v => v.CarItems)
+                .HasForeignKey(ci => ci.VehicleID);
+
+            modelBuilder.Entity<StaffProfile>()
+                .HasKey(sp => new { sp.UserID, sp.StationID });
+            modelBuilder.Entity<StaffProfile>()
+                .HasOne(sp => sp.User)
+                .WithOne(u => u.StaffProfile)
+                .HasForeignKey<StaffProfile>(sp => sp.UserID);
+            modelBuilder.Entity<StaffProfile>()
+                .HasOne(sp => sp.Station)
+                .WithMany(s => s.StaffProfiles)
+                .HasForeignKey(sp => sp.StationID);
+
+            modelBuilder.Entity<RenterProfile>()
+                .HasKey(rp => rp.Id);
+            modelBuilder.Entity<RenterProfile>()
+                .HasOne(rp => rp.User)
+                .WithOne(u => u.RenterProfile)
+                .HasForeignKey<RenterProfile>(rp => rp.UserID);
+
+            modelBuilder.Entity<IDImage>()
+                .HasKey(ii => new { ii.RenterID, ii.ImageID });
+            modelBuilder.Entity<IDImage>()
+                .HasOne(ii => ii.Profile)
+                .WithMany(p => p.IDImages)
+                .HasForeignKey(ii => ii.RenterID);
+            modelBuilder.Entity<IDImage>()
+                .HasOne(ii => ii.Image)
+                .WithMany(m => m.IDImages)
+                .HasForeignKey(ii => ii.ImageID);
+
+            modelBuilder.Entity<DriverLicenseImage>()
+                .HasKey(ii => new { ii.RenterID, ii.ImageID });
+            modelBuilder.Entity<DriverLicenseImage>()
+                .HasOne(ii => ii.Profile)
+                .WithMany(p => p.DriverLicenseImages)
+                .HasForeignKey(ii => ii.RenterID);
+            modelBuilder.Entity<DriverLicenseImage>()
+                .HasOne(ii => ii.Image)
+                .WithMany(m => m.DriverLicenseImages)
+                .HasForeignKey(ii => ii.ImageID);
+
+            modelBuilder.Entity<ItemCategory>().HasData(
+                new ItemCategory { Id = 1, Name = "Ngoại thất" },
+                new ItemCategory { Id = 2, Name = "Nội thất" },
+                new ItemCategory { Id = 3, Name = "Pin & Kỹ thuật" },
+                new ItemCategory { Id = 4, Name = "Phụ kiện" }
+                );
         }
     }
 }

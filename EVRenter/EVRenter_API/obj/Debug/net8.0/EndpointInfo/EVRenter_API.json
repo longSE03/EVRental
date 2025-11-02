@@ -772,7 +772,7 @@
         }
       }
     },
-    "/api/Model": {
+    "/api/Model/GetAll": {
       "get": {
         "tags": [
           "Model"
@@ -782,79 +782,9 @@
             "description": "OK"
           }
         }
-      },
-      "post": {
-        "tags": [
-          "Model"
-        ],
-        "requestBody": {
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "ModelName": {
-                    "type": "string"
-                  },
-                  "Type": {
-                    "type": "string"
-                  },
-                  "Seat": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Range": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "TrunkCapatity": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Hoursepower": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "MoveLimit": {
-                    "type": "integer",
-                    "format": "int32"
-                  }
-                }
-              },
-              "encoding": {
-                "ModelName": {
-                  "style": "form"
-                },
-                "Type": {
-                  "style": "form"
-                },
-                "Seat": {
-                  "style": "form"
-                },
-                "Range": {
-                  "style": "form"
-                },
-                "TrunkCapatity": {
-                  "style": "form"
-                },
-                "Hoursepower": {
-                  "style": "form"
-                },
-                "MoveLimit": {
-                  "style": "form"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
       }
     },
-    "/api/Model/chech": {
+    "/api/Model/SyncQuantity": {
       "get": {
         "tags": [
           "Model"
@@ -1007,6 +937,78 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Model": {
+      "post": {
+        "tags": [
+          "Model"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ModelName": {
+                    "type": "string"
+                  },
+                  "Type": {
+                    "type": "string"
+                  },
+                  "Seat": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Range": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "TrunkCapatity": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Hoursepower": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "MoveLimit": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "ModelName": {
+                  "style": "form"
+                },
+                "Type": {
+                  "style": "form"
+                },
+                "Seat": {
+                  "style": "form"
+                },
+                "Range": {
+                  "style": "form"
+                },
+                "TrunkCapatity": {
+                  "style": "form"
+                },
+                "Hoursepower": {
+                  "style": "form"
+                },
+                "MoveLimit": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -2087,6 +2089,61 @@
         },
         "additionalProperties": false
       },
+      "CarItem": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isDelete": {
+            "type": "boolean"
+          },
+          "vehicleID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "categoryID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "category": {
+            "$ref": "#/components/schemas/ItemCategory"
+          },
+          "vehicle": {
+            "$ref": "#/components/schemas/Vehicle"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DriverLicenseImage": {
+        "type": "object",
+        "properties": {
+          "renterID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "imageID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "image": {
+            "$ref": "#/components/schemas/Image"
+          },
+          "profile": {
+            "$ref": "#/components/schemas/RenterProfile"
+          }
+        },
+        "additionalProperties": false
+      },
       "ExtraFee": {
         "type": "object",
         "properties": {
@@ -2281,6 +2338,26 @@
         },
         "additionalProperties": false
       },
+      "IDImage": {
+        "type": "object",
+        "properties": {
+          "renterID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "imageID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "image": {
+            "$ref": "#/components/schemas/Image"
+          },
+          "profile": {
+            "$ref": "#/components/schemas/RenterProfile"
+          }
+        },
+        "additionalProperties": false
+      },
       "Image": {
         "type": "object",
         "properties": {
@@ -2303,6 +2380,44 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ModelImage"
+            },
+            "nullable": true
+          },
+          "idImages": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IDImage"
+            },
+            "nullable": true
+          },
+          "driverLicenseImages": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DriverLicenseImage"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ItemCategory": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isDelete": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CarItem"
             },
             "nullable": true
           }
@@ -2487,6 +2602,76 @@
         },
         "additionalProperties": false
       },
+      "RenterProfile": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isDelete": {
+            "type": "boolean"
+          },
+          "userID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "driverLicenseNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          },
+          "idImages": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IDImage"
+            },
+            "nullable": true
+          },
+          "driverLicenseImages": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DriverLicenseImage"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "StaffProfile": {
+        "type": "object",
+        "properties": {
+          "userID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "stationID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "staffCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "isDelete": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "station": {
+            "$ref": "#/components/schemas/Station"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          }
+        },
+        "additionalProperties": false
+      },
       "Station": {
         "type": "object",
         "properties": {
@@ -2528,6 +2713,13 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/HandoverAndReturn"
+            },
+            "nullable": true
+          },
+          "staffProfiles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StaffProfile"
             },
             "nullable": true
           }
@@ -2602,6 +2794,12 @@
               "$ref": "#/components/schemas/Feedback"
             },
             "nullable": true
+          },
+          "staffProfile": {
+            "$ref": "#/components/schemas/StaffProfile"
+          },
+          "renterProfile": {
+            "$ref": "#/components/schemas/RenterProfile"
           }
         },
         "additionalProperties": false
@@ -2628,6 +2826,14 @@
             "type": "integer",
             "format": "int32"
           },
+          "batteryLevel": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "odometer": {
+            "type": "integer",
+            "format": "int32"
+          },
           "status": {
             "type": "integer",
             "format": "int32"
@@ -2642,6 +2848,13 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/HandoverAndReturn"
+            },
+            "nullable": true
+          },
+          "carItems": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CarItem"
             },
             "nullable": true
           }

@@ -458,16 +458,6 @@
   },
   {
     "ContainingType": "EVRenter_API.Controllers.ModelController",
-    "Method": "GetAllModels",
-    "RelativePath": "api/Model",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EVRenter_API.Controllers.ModelController",
     "Method": "CreateModel",
     "RelativePath": "api/Model",
     "HttpMethod": "POST",
@@ -613,8 +603,18 @@
   },
   {
     "ContainingType": "EVRenter_API.Controllers.ModelController",
+    "Method": "GetAllModels",
+    "RelativePath": "api/Model/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EVRenter_API.Controllers.ModelController",
     "Method": "SyncQuantity",
-    "RelativePath": "api/Model/chech",
+    "RelativePath": "api/Model/SyncQuantity",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

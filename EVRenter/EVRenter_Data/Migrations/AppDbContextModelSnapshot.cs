@@ -106,6 +106,54 @@ namespace EVRenter_Data.Migrations
                     b.ToTable("Bookings");
                 });
 
+            modelBuilder.Entity("EVRenter_Data.Entities.CarItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CategoryID")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<int>("VehicleID")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryID");
+
+                    b.HasIndex("VehicleID");
+
+                    b.ToTable("CarItems");
+                });
+
+            modelBuilder.Entity("EVRenter_Data.Entities.DriverLicenseImage", b =>
+                {
+                    b.Property<int>("RenterID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ImageID")
+                        .HasColumnType("int");
+
+                    b.HasKey("RenterID", "ImageID");
+
+                    b.HasIndex("ImageID");
+
+                    b.ToTable("DriverLicenseImages");
+                });
+
             modelBuilder.Entity("EVRenter_Data.Entities.ExtraFee", b =>
                 {
                     b.Property<int>("Id")
@@ -279,6 +327,21 @@ namespace EVRenter_Data.Migrations
                     b.ToTable("HandoverAndReturn");
                 });
 
+            modelBuilder.Entity("EVRenter_Data.Entities.IDImage", b =>
+                {
+                    b.Property<int>("RenterID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ImageID")
+                        .HasColumnType("int");
+
+                    b.HasKey("RenterID", "ImageID");
+
+                    b.HasIndex("ImageID");
+
+                    b.ToTable("IDImages");
+                });
+
             modelBuilder.Entity("EVRenter_Data.Entities.Image", b =>
                 {
                     b.Property<int>("Id")
@@ -301,6 +364,52 @@ namespace EVRenter_Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Images");
+                });
+
+            modelBuilder.Entity("EVRenter_Data.Entities.ItemCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ItemCategories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            IsDelete = false,
+                            Name = "Ngoại thất"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            IsDelete = false,
+                            Name = "Nội thất"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            IsDelete = false,
+                            Name = "Pin & Kỹ thuật"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            IsDelete = false,
+                            Name = "Phụ kiện"
+                        });
                 });
 
             modelBuilder.Entity("EVRenter_Data.Entities.Model", b =>
@@ -432,6 +541,61 @@ namespace EVRenter_Data.Migrations
                     b.ToTable("RentalPrices");
                 });
 
+            modelBuilder.Entity("EVRenter_Data.Entities.RenterProfile", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("DriverLicenseNo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("IDNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("UserID")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserID")
+                        .IsUnique();
+
+                    b.ToTable("RenterProfiles");
+                });
+
+            modelBuilder.Entity("EVRenter_Data.Entities.StaffProfile", b =>
+                {
+                    b.Property<int>("UserID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StationID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IsDelete")
+                        .HasColumnType("int");
+
+                    b.Property<string>("StaffCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserID", "StationID");
+
+                    b.HasIndex("StationID");
+
+                    b.HasIndex("UserID")
+                        .IsUnique();
+
+                    b.ToTable("StaffProfiles");
+                });
+
             modelBuilder.Entity("EVRenter_Data.Entities.Station", b =>
                 {
                     b.Property<int>("Id")
@@ -511,10 +675,16 @@ namespace EVRenter_Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("BatteryLevel")
+                        .HasColumnType("int");
+
                     b.Property<bool>("IsDelete")
                         .HasColumnType("bit");
 
                     b.Property<int>("ModelID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Odometer")
                         .HasColumnType("int");
 
                     b.Property<string>("PlateNumber")
@@ -605,6 +775,44 @@ namespace EVRenter_Data.Migrations
                     b.Navigation("Voucher");
                 });
 
+            modelBuilder.Entity("EVRenter_Data.Entities.CarItem", b =>
+                {
+                    b.HasOne("EVRenter_Data.Entities.ItemCategory", "Category")
+                        .WithMany("Items")
+                        .HasForeignKey("CategoryID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EVRenter_Data.Entities.Vehicle", "Vehicle")
+                        .WithMany("CarItems")
+                        .HasForeignKey("VehicleID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("Vehicle");
+                });
+
+            modelBuilder.Entity("EVRenter_Data.Entities.DriverLicenseImage", b =>
+                {
+                    b.HasOne("EVRenter_Data.Entities.Image", "Image")
+                        .WithMany("DriverLicenseImages")
+                        .HasForeignKey("ImageID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EVRenter_Data.Entities.RenterProfile", "Profile")
+                        .WithMany("DriverLicenseImages")
+                        .HasForeignKey("RenterID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Image");
+
+                    b.Navigation("Profile");
+                });
+
             modelBuilder.Entity("EVRenter_Data.Entities.ExtraFee", b =>
                 {
                     b.HasOne("EVRenter_Data.Entities.Booking", "Booking")
@@ -689,6 +897,25 @@ namespace EVRenter_Data.Migrations
                     b.Navigation("Vehicle");
                 });
 
+            modelBuilder.Entity("EVRenter_Data.Entities.IDImage", b =>
+                {
+                    b.HasOne("EVRenter_Data.Entities.Image", "Image")
+                        .WithMany("IDImages")
+                        .HasForeignKey("ImageID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EVRenter_Data.Entities.RenterProfile", "Profile")
+                        .WithMany("IDImages")
+                        .HasForeignKey("RenterID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Image");
+
+                    b.Navigation("Profile");
+                });
+
             modelBuilder.Entity("EVRenter_Data.Entities.ModelImage", b =>
                 {
                     b.HasOne("EVRenter_Data.Entities.Image", "Image")
@@ -738,6 +965,36 @@ namespace EVRenter_Data.Migrations
                     b.Navigation("Model");
                 });
 
+            modelBuilder.Entity("EVRenter_Data.Entities.RenterProfile", b =>
+                {
+                    b.HasOne("EVRenter_Data.Entities.User", "User")
+                        .WithOne("RenterProfile")
+                        .HasForeignKey("EVRenter_Data.Entities.RenterProfile", "UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("EVRenter_Data.Entities.StaffProfile", b =>
+                {
+                    b.HasOne("EVRenter_Data.Entities.Station", "Station")
+                        .WithMany("StaffProfiles")
+                        .HasForeignKey("StationID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EVRenter_Data.Entities.User", "User")
+                        .WithOne("StaffProfile")
+                        .HasForeignKey("EVRenter_Data.Entities.StaffProfile", "UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Station");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("EVRenter_Data.Entities.Vehicle", b =>
                 {
                     b.HasOne("EVRenter_Data.Entities.Model", "Model")
@@ -773,7 +1030,16 @@ namespace EVRenter_Data.Migrations
 
             modelBuilder.Entity("EVRenter_Data.Entities.Image", b =>
                 {
+                    b.Navigation("DriverLicenseImages");
+
+                    b.Navigation("IDImages");
+
                     b.Navigation("ModelImages");
+                });
+
+            modelBuilder.Entity("EVRenter_Data.Entities.ItemCategory", b =>
+                {
+                    b.Navigation("Items");
                 });
 
             modelBuilder.Entity("EVRenter_Data.Entities.Model", b =>
@@ -792,9 +1058,18 @@ namespace EVRenter_Data.Migrations
                     b.Navigation("Vehicles");
                 });
 
+            modelBuilder.Entity("EVRenter_Data.Entities.RenterProfile", b =>
+                {
+                    b.Navigation("DriverLicenseImages");
+
+                    b.Navigation("IDImages");
+                });
+
             modelBuilder.Entity("EVRenter_Data.Entities.Station", b =>
                 {
                     b.Navigation("HandoverAndReturns");
+
+                    b.Navigation("StaffProfiles");
 
                     b.Navigation("Vehicles");
                 });
@@ -810,10 +1085,18 @@ namespace EVRenter_Data.Migrations
                     b.Navigation("HandoverAndReturns");
 
                     b.Navigation("Payments");
+
+                    b.Navigation("RenterProfile")
+                        .IsRequired();
+
+                    b.Navigation("StaffProfile")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("EVRenter_Data.Entities.Vehicle", b =>
                 {
+                    b.Navigation("CarItems");
+
                     b.Navigation("HandoverAndReturns");
                 });
 

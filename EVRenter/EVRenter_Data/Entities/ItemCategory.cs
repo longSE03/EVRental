@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace EVRenter_Data.Entities
 {
-    //public class ItemCategory : BaseEntity
-    //{
-    //    public string Name { get; set; }
-    //    public virtual ICollection<CarItem> Items { get; set; }
-    //}
+    public class ItemCategory : BaseEntity
+    {
+        public string Name { get; set; }
+        public virtual ICollection<CarItem> Items { get; set; }
+    }
 }

@@ -89,6 +89,33 @@ namespace EVRenter_Service.Service
 
             await _unitOfWork.SaveChangesAsync();
 
+
+            //
+            var categories = await _unitOfWork.Repository<ItemCategory>().AsQueryable().
+                Where(c => !c.IsDelete).ToListAsync();
+            var defaultChecklist = new List<CarItem>();
+
+            foreach (var category in categories)
+            {
+                if (DefaultCarChecklist.Checklist.TryGetValue(category.Name, out var items))
+                {
+                    foreach (var name in items)
+                    {
+                        defaultChecklist.Add(new CarItem
+                        {
+                            VehicleID = vehicle.Id,
+                            CategoryID = category.Id,
+                            Name = name,
+                            Status = 1 // 0 = "good"
+                        });
+                    }
+                }
+            }
+
+            await _unitOfWork.Repository<CarItem>().AddRangeAsync(defaultChecklist);
+            await _unitOfWork.SaveChangesAsync();
+
+
             var createdVehicle = await _unitOfWork.Repository<Vehicle>()
                 .AsQueryable()
                 .Where(x => x.Id == vehicle.Id)
@@ -185,4 +212,31 @@ namespace EVRenter_Service.Service
             return true;
         }
     }
+
+    public static class DefaultCarChecklist
+    {
+        public static readonly Dictionary<string, string[]> Checklist = new()
+        {
+            ["Ngoại thất"] = new[]
+            {
+            "Đèn pha trước", "Đèn hậu", "Gương chiếu hậu", "Lốp xe 4 bánh",
+            "Thân xe (trầy xước)", "Cửa xe (4 cửa)", "Cốp sau"
+        },
+            ["Nội thất"] = new[]
+            {
+            "Ghế lái & ghế phụ", "Ghế hàng 2", "Dây đai an toàn",
+            "Điều hòa không khí", "Hệ thống âm thanh", "Màn hình trung tâm"
+        },
+            ["Pin & Kỹ thuật"] = new[]
+            {
+            "Mức pin hiện tại", "Cổng sạc", "Hệ thống phanh",
+            "Đèn báo trên táp-lô", "Hệ thống lái"
+        },
+            ["Phụ kiện"] = new[]
+            {
+            "Dây sạc di động", "Sách hướng dẫn", "Chìa khóa (2 chiếc)", "Bộ dụng cụ sơ cứu"
+        }
+        };
+    }
+
 }
