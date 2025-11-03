@@ -17,7 +17,7 @@ namespace EVRenter_Service.Service
     public interface IVehicleService
     {
         Task<IEnumerable<VehicleResponseModel>> GetAllVehicle();
-        Task<VehicleResponseModel?> GetVehicleByIdAsync(int id);
+        Task<VehicleDetailResponseModel?> GetVehicleByIdAsync(int id);
         Task<VehicleResponseModel> CreateVehicleAsync(VehicleRequestModel request);
         Task<VehicleResponseModel?> UpdateVehicleAsync(int id, VehicleUpdateRequest request);
         Task<bool> DeleteVehicleAsync(int id);
@@ -42,12 +42,12 @@ namespace EVRenter_Service.Service
                 .ToListAsync();
         }
 
-        public async Task<VehicleResponseModel?> GetVehicleByIdAsync(int id)
+        public async Task<VehicleDetailResponseModel?> GetVehicleByIdAsync(int id)
         {
             // Get the user with basic information
             var vehicle = await _unitOfWork.Repository<Vehicle>().AsQueryable()
                 .Where(u => u.Id == id)
-                .ProjectTo<VehicleResponseModel>(_mapper.ConfigurationProvider)
+                .ProjectTo<VehicleDetailResponseModel>(_mapper.ConfigurationProvider)
                 .FirstOrDefaultAsync();
 
             return vehicle;

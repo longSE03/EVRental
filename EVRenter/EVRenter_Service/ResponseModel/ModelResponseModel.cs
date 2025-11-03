@@ -11,16 +11,14 @@ namespace EVRenter_Service.ResponseModel
     {
         public int Id { get; set; }
         public string ModelName { get; set; }
+        public string Type { get; set; }
+        public int Quantity { get; set; }
         public PriceResponseModel Price { get; set; }
         public DepositResponseModel Deposit { get; set; }
-        public int Quantity { get; set; }
-        public int Seat { get; set; }
-        public int Range { get; set; }
-        public int TrunkCapatity { get; set; }
-        public int Hoursepower { get; set; }
-        public int MoveLimit { get; set; }
+        public List<string> Features { get; set; }
+        //public List<string> Specifications { get; set; }
+        public SpecificationsModel Specifications { get; set; }
 
-        //public virtual RentalPrice RentalPrice { get; set; }
         public virtual ICollection<Vehicle> Vehicles { get; set; }
     }
 
@@ -36,5 +34,15 @@ namespace EVRenter_Service.ResponseModel
         public decimal Daily { get; set; }
         public decimal Weekly { get; set; }
         public decimal Monthly { get; set; }
+    }
+
+    public class SpecificationsModel
+    {
+        public int Seat { get; set; }
+        public int Range { get; set; }
+        public int TrunkCapatity { get; set; }
+        public int Hoursepower { get; set; }
+        public string CarModel { get; set; }
+        public int MoveLimit { get; set; }
     }
 }

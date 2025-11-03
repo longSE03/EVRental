@@ -29,6 +29,24 @@ namespace EVRenter_Service.Mapping
                     Daily = src.RentalPrice != null ? src.RentalPrice.Deposit : 0,
                     Weekly = src.RentalPrice != null ? src.RentalPrice.Deposit * 2 : 0,
                     Monthly = src.RentalPrice != null ? src.RentalPrice.Deposit * 3 : 0
+                }))
+                .ForMember(dest => dest.Features,
+                opt => opt.MapFrom(src => new List<string>
+                {
+                    src.Type,
+                    $"{src.Range}km (NEDC)",
+                    $"{src.Seat} chỗ",
+                    $"Dung tích cốp {src.TrunkCapatity}L"
+                }))
+                .ForMember(dest => dest.Specifications,
+                opt => opt.MapFrom(src => new SpecificationsModel
+                {
+                    Seat = src.Seat,
+                    Hoursepower = src.Hoursepower,
+                    TrunkCapatity = src.TrunkCapatity,
+                    Range = src.Range,
+                    CarModel = src.Type,
+                    MoveLimit = src.MoveLimit
                 }));
             CreateMap<ModelRequestModel, Model>();
             CreateMap<ModelUpdateRequest, Model>();

@@ -19,6 +19,20 @@ namespace EVRenter_Service.ResponseModel
         public string StationName { get; set; }
         public string StationLocation { get; set; }
         public int Status { get; set; }
+    }
+
+    public class VehicleDetailResponseModel
+    {
+        public int Id { get; set; }
+        public int ModelID { get; set; }
+        public string ModelName { get; set; }
+        public string PlateNumber { get; set; }
+        public int BatteryLevel { get; set; }
+        public int Odometer { get; set; }
+        public int StationID { get; set; }
+        public string StationName { get; set; }
+        public string StationLocation { get; set; }
+        public int Status { get; set; }
         public List<CategoryChecklistResponse> Categories { get; set; }
     }
 

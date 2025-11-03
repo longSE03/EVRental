@@ -1986,11 +1986,15 @@
           "isDelete": {
             "type": "boolean"
           },
-          "amenityName": {
+          "name": {
             "type": "string",
             "nullable": true
           },
           "modelID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
             "type": "integer",
             "format": "int32"
           },

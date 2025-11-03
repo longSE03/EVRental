@@ -17,8 +17,13 @@ namespace EVRenter_Service.Mapping
             CreateMap<Vehicle, VehicleResponseModel>()
                 .ForMember(dest => dest.ModelName, opt => opt.MapFrom(src => src.Model.ModelName))
                 .ForMember(dest => dest.StationName, opt => opt.MapFrom(src => src.Station.Name))
-                .ForMember(dest => dest.StationLocation, opt => opt.MapFrom(src => src.Station.Location))
-                .ForMember(dest => dest.Categories, opt => opt.MapFrom(src => src.CarItems
+                .ForMember(dest => dest.StationLocation, opt => opt.MapFrom(src => src.Station.Location));
+
+            CreateMap<Vehicle, VehicleDetailResponseModel>()
+               .ForMember(dest => dest.ModelName, opt => opt.MapFrom(src => src.Model.ModelName))
+               .ForMember(dest => dest.StationName, opt => opt.MapFrom(src => src.Station.Name))
+               .ForMember(dest => dest.StationLocation, opt => opt.MapFrom(src => src.Station.Location))
+               .ForMember(dest => dest.Categories, opt => opt.MapFrom(src => src.CarItems
                 .GroupBy(i => new { i.CategoryID, i.Category.Name })
                 .Select(g => new CategoryChecklistResponse
                 {
