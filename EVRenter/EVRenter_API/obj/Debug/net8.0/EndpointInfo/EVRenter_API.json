@@ -5,6 +5,60 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Amenities/{modelId}": {
+      "get": {
+        "tags": [
+          "Amenities"
+        ],
+        "parameters": [
+          {
+            "name": "modelId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Amenities": {
+      "post": {
+        "tags": [
+          "Amenities"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AmenitiesRequestModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AmenitiesRequestModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AmenitiesRequestModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Booking": {
       "get": {
         "tags": [
@@ -864,6 +918,14 @@
                   "MoveLimit": {
                     "type": "integer",
                     "format": "int32"
+                  },
+                  "ChargingTime": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ChargePower": {
+                    "type": "integer",
+                    "format": "int32"
                   }
                 }
               },
@@ -887,6 +949,12 @@
                   "style": "form"
                 },
                 "MoveLimit": {
+                  "style": "form"
+                },
+                "ChargingTime": {
+                  "style": "form"
+                },
+                "ChargePower": {
                   "style": "form"
                 }
               }
@@ -980,6 +1048,14 @@
                   "MoveLimit": {
                     "type": "integer",
                     "format": "int32"
+                  },
+                  "ChargingTime": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ChargePower": {
+                    "type": "integer",
+                    "format": "int32"
                   }
                 }
               },
@@ -1003,6 +1079,12 @@
                   "style": "form"
                 },
                 "MoveLimit": {
+                  "style": "form"
+                },
+                "ChargingTime": {
+                  "style": "form"
+                },
+                "ChargePower": {
                   "style": "form"
                 }
               }
@@ -1795,9 +1877,6 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "PlateNumber": {
-                    "type": "string"
-                  },
                   "ModelID": {
                     "type": "integer",
                     "format": "int32"
@@ -1805,17 +1884,46 @@
                   "StationID": {
                     "type": "integer",
                     "format": "int32"
+                  },
+                  "Location": {
+                    "type": "string"
+                  },
+                  "PlateNumber": {
+                    "type": "string"
+                  },
+                  "BatteryLevel": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Odometer": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Color": {
+                    "type": "string"
                   }
                 }
               },
               "encoding": {
-                "PlateNumber": {
-                  "style": "form"
-                },
                 "ModelID": {
                   "style": "form"
                 },
                 "StationID": {
+                  "style": "form"
+                },
+                "Location": {
+                  "style": "form"
+                },
+                "PlateNumber": {
+                  "style": "form"
+                },
+                "BatteryLevel": {
+                  "style": "form"
+                },
+                "Odometer": {
+                  "style": "form"
+                },
+                "Color": {
                   "style": "form"
                 }
               }
@@ -1883,6 +1991,20 @@
                     "type": "integer",
                     "format": "int32"
                   },
+                  "Location": {
+                    "type": "string"
+                  },
+                  "BatteryLevel": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Odometer": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Color": {
+                    "type": "string"
+                  },
                   "Status": {
                     "type": "integer",
                     "format": "int32"
@@ -1897,6 +2019,18 @@
                   "style": "form"
                 },
                 "StationID": {
+                  "style": "form"
+                },
+                "Location": {
+                  "style": "form"
+                },
+                "BatteryLevel": {
+                  "style": "form"
+                },
+                "Odometer": {
+                  "style": "form"
+                },
+                "Color": {
                   "style": "form"
                 },
                 "Status": {
@@ -2000,6 +2134,23 @@
           },
           "model": {
             "$ref": "#/components/schemas/Model"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AmenitiesRequestModel": {
+        "type": "object",
+        "properties": {
+          "modelID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "amenities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EachAmenityModel"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -2144,6 +2295,16 @@
           },
           "profile": {
             "$ref": "#/components/schemas/RenterProfile"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EachAmenityModel": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -2467,6 +2628,14 @@
             "format": "int32"
           },
           "moveLimit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "chargingTime": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "chargePower": {
             "type": "integer",
             "format": "int32"
           },
@@ -2830,6 +2999,10 @@
             "type": "integer",
             "format": "int32"
           },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
           "batteryLevel": {
             "type": "integer",
             "format": "int32"
@@ -2837,6 +3010,10 @@
           "odometer": {
             "type": "integer",
             "format": "int32"
+          },
+          "color": {
+            "type": "string",
+            "nullable": true
           },
           "status": {
             "type": "integer",

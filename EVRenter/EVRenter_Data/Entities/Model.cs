@@ -16,6 +16,8 @@ namespace EVRenter_Data.Entities
         public int TrunkCapatity { get; set; }
         public int Hoursepower { get; set; }
         public int MoveLimit { get; set; }
+        public int ChargingTime { get; set; }
+        public int ChargePower { get; set; }
         public virtual ICollection<Vehicle> Vehicles { get; set; }
         public virtual RentalPrice RentalPrice { get; set; }
         public virtual ICollection<Booking> Bookings { get; set; }

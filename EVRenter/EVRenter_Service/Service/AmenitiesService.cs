@@ -71,7 +71,7 @@ namespace EVRenter_Service.Service
                 await _unitOfWork.Repository<Amenities>().InsertAsync(amenity);
             }
 
-            await _unitOfWork.SaveChangesAsync();
+            await _unitOfWork.CommitAsync();
 
             var createdAmenities = await _unitOfWork.Repository<Amenities>()
                 .GetQueryable()
